@@ -1,0 +1,170 @@
+[
+  {
+    "slug": "story2game",
+    "name": "Story2Game",
+    "category": "GENERATIVE SYSTEMS",
+    "tags": [
+      "Agent Pipeline",
+      "DSL",
+      "Phaser"
+    ],
+    "title": [
+      "让故事成为可执行的世界",
+      "From stories to executable worlds"
+    ],
+    "summary": [
+      "把自然语言故事转换为结构化游戏，用验证、修复与重新生成闭环处理不可靠的输出。",
+      "Turning natural-language stories into structured games through generation, verification and recovery."
+    ],
+    "problem": [
+      "开放式故事生成容易产生无法执行的规则和不一致的状态。目标是让创作者从故事出发，得到可运行的游戏。",
+      "Open-ended generation can produce invalid rules and inconsistent state. The goal is a runnable game built from a creator’s story."
+    ],
+    "work": [
+      "设计 GamePlan 与结构化 DSL，连接编译器和确定性运行时；构建 Repair、Regeneration 与 Re-verification；实现 Phaser 2D 交互切片。",
+      "Designed the GamePlan and structured DSL, compiler and deterministic runtime; built repair, regeneration and re-verification; implemented a Phaser 2D interaction slice."
+    ],
+    "tradeoff": [
+      "用受约束的 DSL 换取可执行性；验证通过后才接受结果，而非依赖模型的自我判断。",
+      "Trade unrestricted output for an executable DSL. Accept results through validation rather than model self-assessment."
+    ],
+    "product": [
+      "首个核心任务是“故事到可玩样例”。将复杂编辑和多模态素材延后，优先验证生成结果能否运行、失败后能否恢复。",
+      "Start with story-to-playable. Defer complex editing and multimodal assets to focus on executable results and recovery."
+    ],
+    "state": [
+      "已实现生成与验证链路，以及 Phaser 2D 交互切片。",
+      "Generation, verification and a Phaser 2D interaction slice are implemented."
+    ],
+    "focus": [
+      "通过约束与确定性验证，让故事生成结果可执行。",
+      "Use constraints and deterministic verification to make generated stories executable."
+    ]
+  },
+  {
+    "slug": "ai-market",
+    "name": "AI Market Intelligence",
+    "category": "EVIDENCE & EVALUATION",
+    "tags": [
+      "FastAPI",
+      "PostgreSQL",
+      "Point-in-Time"
+    ],
+    "title": [
+      "让 AI 判断有证据、有时间边界",
+      "Evidence and temporal integrity for AI"
+    ],
+    "summary": [
+      "将信息采集、模型推理与事后验证连接起来，关注证据溯源、时间一致性和结果可复现。",
+      "Connecting evidence, model reasoning and outcome verification with traceable sources and temporal integrity."
+    ],
+    "problem": [
+      "模型输出观点很容易，确认它在当时使用了什么证据、后来如何验证更难。",
+      "Generating a forecast is easy; tracing what was known at the time and verifying the outcome is harder."
+    ],
+    "work": [
+      "设计 Evidence → Event → Forecast → Verification → Reputation 链路，接入真实行情与 SEC 数据，实现 PIT、结算门控与回归验证。",
+      "Built the evidence-to-verification pipeline, integrated market and SEC data, and implemented point-in-time checks, settlement gates and regression verification."
+    ],
+    "tradeoff": [
+      "宁可明确返回证据不足或等待数据，也不以过期行情或未来信息生成看似完整的结论。",
+      "Explicitly return insufficient evidence or await data rather than use stale prices or future information."
+    ],
+    "product": [
+      "把用户任务定义为理解证据与判断可靠性；通过只读结果和来源追溯建立可信度，避免把预测包装为收益承诺。",
+      "Focus on understanding evidence and reliability through read-only results and source tracing, without presenting predictions as promised returns."
+    ],
+    "state": [
+      "已实现证据与验证链路、时间边界检查和结算门控。",
+      "Evidence and verification pipeline with point-in-time checks and settlement gates."
+    ],
+    "focus": [
+      "保持证据可溯源、时间一致，并在条件满足后验证判断。",
+      "Trace evidence, preserve temporal integrity and verify claims when outcomes are knowable."
+    ]
+  },
+  {
+    "slug": "social-twin",
+    "name": "AI Social Twin",
+    "category": "PERSONALIZED AGENTS",
+    "tags": [
+      "Memory",
+      "Relationship",
+      "Evaluation"
+    ],
+    "title": [
+      "个性化，不止一种说话风格",
+      "Personalization shaped by relationships"
+    ],
+    "summary": [
+      "结合共享记忆与关系条件建模，让同一分身在不同关系中呈现不同的互动方式。",
+      "Combining shared memory and relationship-conditioned behavior to personalize interactions."
+    ],
+    "problem": [
+      "统一的人设提示难以表达同一个人面对不同朋友时的互动差异。",
+      "A single persona prompt misses how one person communicates differently across relationships."
+    ],
+    "work": [
+      "设计语音处理、说话人识别、行为特征、记忆与生成链路；实现分批处理和 checkpoint 恢复；构建消融与盲评框架。",
+      "Designed speech processing, speaker identification, behavior profiles, memory and generation; implemented checkpoint recovery and ablation/blind evaluation."
+    ],
+    "tradeoff": [
+      "区分人设、记忆与关系的贡献；长音频分批处理，避免一次失败导致全量重算。",
+      "Separate the contributions of persona, memory and relationship; process long audio in batches to support recovery."
+    ],
+    "product": [
+      "以熟人交流为探索场景，重点验证身份风格和关系感知；真实语音与私人对话不作为公开展示素材。",
+      "Explore familiar-person interactions, evaluating identity and relationship sensitivity while keeping private conversations and voices out of public demos."
+    ],
+    "state": [
+      "个性化对话原型，包含批处理恢复与消融、盲评框架。",
+      "Personalized dialogue prototype with batch recovery and ablation/blind evaluation."
+    ],
+    "focus": [
+      "区分人设、记忆与关系，验证各自对个性化对话的贡献。",
+      "Separate profile, memory and relationship; evaluate their contribution to dialogue."
+    ]
+  },
+  {
+    "slug": "rule-builder",
+    "name": "Visual CEP Rule Builder",
+    "category": "HUMAN-CENTERED TOOLS",
+    "tags": [
+      "React",
+      "Typed AST",
+      "Flink CEP"
+    ],
+    "title": [
+      "把专业规则交还给领域专家",
+      "Let domain experts author their own rules"
+    ],
+    "summary": [
+      "用可视化节点表达复杂流式监测规则，再转为类型化 AST、自然语言解释与执行代码。",
+      "Visual authoring of streaming rules, translated into a typed AST, explanation and executable code."
+    ],
+    "problem": [
+      "非技术领域专家理解业务条件，却难以直接编写复杂事件处理代码。",
+      "Domain experts understand monitoring conditions but may not be able to write complex event processing code."
+    ],
+    "work": [
+      "设计 RuleGraph 与 AST 映射、拓扑重构和约束验证；实现条件、逻辑和时间节点，以及 StreamSQL / Flink CEP 输出。",
+      "Designed graph-to-AST mapping, topological reconstruction and constraint validation; implemented predicate, logic and temporal nodes with StreamSQL / Flink CEP output."
+    ],
+    "tradeoff": [
+      "限制节点组合并给出可理解的错误解释，在表达能力与正确执行之间取得平衡。",
+      "Constrain node combinations and explain errors clearly to balance expressive power and valid execution."
+    ],
+    "product": [
+      "围绕“选择指标—组合条件—设置窗口—理解规则”的用户任务设计交互，让规则解释成为验证意图的一部分。",
+      "Structure the flow around selecting a metric, combining conditions, setting a window and understanding the rule. Use explanations to check intent."
+    ],
+    "state": [
+      "在 TU Berlin DIMA Lab 开发的可视化规则构建工具。",
+      "Visual rule authoring developed at TU Berlin DIMA Lab."
+    ],
+    "focus": [
+      "用可视化表达、约束校验和解释，帮助领域专家创建流式规则。",
+      "Help domain experts author streaming rules through visuals, validation and explanation."
+    ]
+  }
+]
