@@ -6,10 +6,10 @@
 
 I build LLM applications with verifiable execution, recoverable workflows and useful interfaces.
 
-- 柏林工业大学计算机工程硕士在读，预计 **2026.10** 毕业 / TU Berlin, expected Oct 2026.
+- 柏林工业大学计算机工程硕士 / TU Berlin
 - 企业 **RAG、Hybrid Search、Tool Calling、Multi-Agent** 工作流经验。
 - 求职方向：**AI 应用开发、Agent 开发、AI 全栈、技术型 AI 产品岗位**。
-- 中国为主，德国 / 香港为辅 · Chinese / English / German C1.
+- 语言：中文/英文/德语  Working language: Chinese / English / German (C1).
 - 联系 / Contact: **geemakerlee@gmail.com**
 
 [中英文项目网站 / Portfolio](https://geemakerlee.github.io/GeeMakerLee/) · [English](https://geemakerlee.github.io/GeeMakerLee/?lang=en) · [现有作品集 / Current portfolio](https://hao-li-portfolio.geemakerlee.chatgpt.site/)
@@ -25,9 +25,9 @@ I build LLM applications with verifiable execution, recoverable workflows and us
 
 ### Story2Game
 
-把自然语言故事转换为结构化游戏，用验证、修复与重新生成闭环处理不可靠的输出。
+把自然语言故事转换为结构化游戏，通过验证、修复与重新生成形成闭环，处理不可靠的输出。
 
-Turning natural-language stories into structured games through generation, verification and recovery.
+Turning natural-language stories into structured games through generation, verification, and recovery.
 
 **我的贡献 / Contribution：** 设计 GamePlan 与结构化 DSL，连接编译器和确定性运行时；构建 Repair、Regeneration 与 Re-verification；实现 Phaser 2D 交互切片。
 
